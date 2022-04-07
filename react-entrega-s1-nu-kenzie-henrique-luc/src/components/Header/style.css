@@ -5,6 +5,8 @@
   justify-content: space-between;
   margin-bottom: 39px;
   height: 5.5em;
+  display: flex;
+  align-items: center;
 }
 
 .container_header figcaption {

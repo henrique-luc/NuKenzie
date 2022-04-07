@@ -1,0 +1,8 @@
+.App main {
+  display: flex;
+  margin: 20px;
+}
+
+.container_formulario-esq {
+  margin-right: 80px;
+}

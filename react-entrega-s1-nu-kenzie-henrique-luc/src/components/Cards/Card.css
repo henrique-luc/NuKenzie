@@ -1,0 +1,15 @@
+.container_li {
+  margin-bottom: 30px;
+}
+
+.container_li button {
+  cursor: pointer;
+}
+
+.container_li figcaption {
+  display: none;
+}
+
+.container_li figure {
+  cursor: pointer;
+}
