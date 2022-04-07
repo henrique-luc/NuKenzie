@@ -1,4 +1,5 @@
 import { useState } from "react";
+import("./Form.css");
 
 const Formulario = ({ addList }) => {
   const [description, setDescription] = useState("");
@@ -20,24 +21,27 @@ const Formulario = ({ addList }) => {
   }
 
   return (
-    <form onSubmit={(e) => handleSubmit(e)}>
-      <label htmlFor="input_description">Descrição</label>
-      <input
-        type="text"
-        id="input_description"
-        name="input_description"
-        placeholder="Digite aqui sua descrição"
-        value={description}
-        onChange={(event) => setDescription(event.target.value)}
-      />
-      <small>Ex: Compra de roupas</small>
-      <section>
+    <form className="container_form" onSubmit={(e) => handleSubmit(e)}>
+      <section className="container_form-top">
+        <label htmlFor="input_description">Descrição</label>
+        <input
+          type="text"
+          id="input_description"
+          name="input_description"
+          placeholder="Digite aqui sua descrição"
+          value={description}
+          onChange={(event) => setDescription(event.target.value)}
+        />
+        <small>Ex: Compra de roupas</small>
+      </section>
+      <section className="container_form-bottom">
         <div className="input_value">
           <label htmlFor="input_value">Valor</label>
           <input
             type="text"
             id="input_value"
             name="input_value"
+            placeholder="R$ 1,00"
             value={value}
             onChange={(event) => setValue(event.target.value)}
           />

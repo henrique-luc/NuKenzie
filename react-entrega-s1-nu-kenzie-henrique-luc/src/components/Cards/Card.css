@@ -1,15 +1,67 @@
-.container_li {
-  margin-bottom: 30px;
+.container_card {
+  font-family: "Nunito", sans-serif;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  height: 14vh;
+  width: 40.7vw;
+  display: flex;
+  margin: 6.2vh 0 0;
 }
 
-.container_li button {
+.color_card-grey {
+  background-color: #e9ecef;
+  border-radius: 4px 0px 0px 4px;
+  width: 0.3vw;
+}
+
+.color_card-green {
+  background-color: #03b898;
+  border-radius: 4px 0px 0px 4px;
+  width: 0.3vw;
+}
+
+.container_card-conteudo {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.3vh 0 0 2.2vh;
+}
+
+.container_card-conteudo h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #212529;
+  margin: 0 6.5vh 0.5vh 0;
+  width: 24.6vw;
+  height: 6.3vh;
+}
+
+.container_card-conteudo p {
+  color: #5b6166;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.container_card-conteudo span {
+  width: 7.5vw;
+  color: #212529;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 2.9vh 2vw 0;
+}
+
+.container_card-conteudo button {
+  background-color: #e9ecef;
+  border-radius: 2.46154px;
+  border: none;
+  cursor: pointer;
+  margin-top: 2.9vh;
+  padding: 0.3vw 1vh;
+}
+
+.container_card-conteudo figure {
   cursor: pointer;
 }
 
-.container_li figcaption {
+.container_card-conteudo figcaption {
   display: none;
-}
-
-.container_li figure {
-  cursor: pointer;
 }

@@ -1,0 +1,32 @@
+.container_valor_Total {
+  font-family: "Nunito", sans-serif;
+  border: 1px solid #e9ecef;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 15vh;
+  width: 27vw;
+  display: flex;
+  justify-content: space-around;
+  margin: 6.2vh 18vw 0;
+}
+
+.container_valor_Total section,
+span {
+  margin-top: 4vh;
+}
+
+.container_valor_Total h2 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 1vh;
+}
+
+.container_valor_Total small {
+  font-weight: 400;
+  font-size: 12px;
+  color: #5b6166;
+}
+
+.container_valor_Total span {
+  color: #fd377e;
+}

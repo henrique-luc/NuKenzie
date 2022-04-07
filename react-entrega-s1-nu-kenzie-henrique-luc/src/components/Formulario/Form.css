@@ -1,0 +1,87 @@
+.container_form {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 56vh;
+  width: 27vw;
+  display: flex;
+  flex-direction: column;
+  margin: 6.2vh 18vw 0;
+}
+
+.container_form section {
+  margin: 6vh 2.5vw 0;
+}
+
+.container_form label {
+  font-size: 0.875em;
+}
+
+.container_form small {
+  font-size: 0.75em;
+  color: #868e96;
+}
+
+.container_form input,
+select {
+  background-color: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 2vh 0;
+}
+
+.container_form #input_description {
+  width: 22vw;
+}
+
+.container_form #input_value {
+  width: 9vw;
+}
+
+.container_form #input_type {
+  width: 10vw;
+}
+
+.container_form button {
+  background-color: #fd377e;
+  border: 2px solid #fd377e;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 8px;
+  width: 22vw;
+  padding: 2vh 0;
+  margin: 3vh 2.5vw;
+  cursor: pointer;
+}
+
+.input_value {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_type {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.8vw;
+}
+
+.container_form-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_form-top input {
+  margin: 2.3vh 0 0.7vh;
+}
+
+.container_form-bottom {
+  display: flex;
+}
+
+.container_form-bottom input,
+select {
+  margin: 1.5vh 0 0;
+}
