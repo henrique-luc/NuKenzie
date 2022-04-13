@@ -2,9 +2,9 @@ import { useState } from "react";
 import "./index.css";
 import "./App.css";
 import Header from "./components/Header";
-import Formulario from "./components/Formulario/Form";
-import Lista from "./components/Lista/List";
-import DinheiroTotal from "./components/DinheiroTotal/TotalMoney";
+import Form from "./components/Form";
+import List from "./components/List";
+import TotalMoney from "./components/TotalMoney";
 
 function App() {
   const [listTransactions, setListTransactions] = useState([]);
@@ -14,19 +14,19 @@ function App() {
   }
 
   function handleList(listaItens) {
-    const filtrados = listTransactions.filter((item) => listaItens !== item.id);
-    setListTransactions(filtrados);
+    const filtered = listTransactions.filter((item) => listaItens !== item.id);
+    setListTransactions(filtered);
   }
 
   return (
     <div className="App">
       <Header />
       <main>
-        <section className="container_formulario-esq">
-          <Formulario addList={addList} />
-          <DinheiroTotal listTransactions={listTransactions} />
+        <section className="container_form-left">
+          <Form addList={addList} />
+          <TotalMoney listTransactions={listTransactions} />
         </section>
-        <Lista listTransactions={listTransactions} handleList={handleList} />
+        <List listTransactions={listTransactions} handleList={handleList} />
       </main>
     </div>
   );

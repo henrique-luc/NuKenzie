@@ -1,4 +1,4 @@
-.container_valor_Total {
+.container_total_value {
   font-family: "Nunito", sans-serif;
   border: 1px solid #e9ecef;
   box-sizing: border-box;
@@ -10,23 +10,23 @@
   margin: 6.2vh 18vw 0;
 }
 
-.container_valor_Total section,
+.container_total_value section,
 span {
   margin-top: 4vh;
 }
 
-.container_valor_Total h2 {
+.container_total_value h2 {
   font-weight: 700;
   font-size: 16px;
   margin-bottom: 1vh;
 }
 
-.container_valor_Total small {
+.container_total_value small {
   font-weight: 400;
   font-size: 12px;
   color: #5b6166;
 }
 
-.container_valor_Total span {
+.container_total_value span {
   color: #fd377e;
 }

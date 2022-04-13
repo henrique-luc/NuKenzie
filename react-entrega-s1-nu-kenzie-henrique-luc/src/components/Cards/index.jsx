@@ -1,14 +1,17 @@
-import "./Card.css";
+import "./index.css";
 
 const Card = ({ transaction, handleList }) => {
   return (
     <li className="container_card">
-      {transaction.type === "entrada" ? (
-        <div className="color_card-green"></div>
-      ) : (
-        <div className="color_card-grey"></div>
-      )}
-      <div className="container_card-conteudo">
+      <div
+        className={
+          transaction.type === "entrada"
+            ? "color_card-green"
+            : "color_card-grey"
+        }
+      ></div>
+
+      <div className="container_card-content">
         <section>
           <h2>{transaction.description}</h2>
           <p>{transaction.type}</p>

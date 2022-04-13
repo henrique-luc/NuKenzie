@@ -1,21 +1,21 @@
-import "./TotalMoney.css";
+import "./index.css";
 
 const TotalMoney = ({ listTransactions }) => {
-  const valorTotal = listTransactions.reduce((acumulador, currentValue) => {
+  const totalValue = listTransactions.reduce((acumulator, currentValue) => {
     if (currentValue.type === "entrada") {
-      return acumulador + Number(currentValue.value);
+      return acumulator + Number(currentValue.value);
     } else {
-      return acumulador - Number(currentValue.value);
+      return acumulator - Number(currentValue.value);
     }
   }, 0);
 
   return (
-    <div className="container_valor_Total">
+    <div className="container_total_value">
       <section>
         <h2>Valor total:</h2>
         <small>O valor se refere ao saldo</small>
       </section>
-      <span>$ {valorTotal}</span>
+      <span>$ {totalValue}</span>
     </div>
   );
 };

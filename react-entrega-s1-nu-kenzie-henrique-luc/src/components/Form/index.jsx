@@ -1,7 +1,7 @@
 import { useState } from "react";
-import("./Form.css");
+import "./index.css";
 
-const Formulario = ({ addList }) => {
+const Form = ({ addList }) => {
   const [description, setDescription] = useState("");
   const [value, setValue] = useState("");
   const [type, setType] = useState("entrada");
@@ -15,7 +15,6 @@ const Formulario = ({ addList }) => {
       value: value,
       id: count,
     };
-    console.log(itemCard);
     setCount(count + 1);
     addList(itemCard);
   }
@@ -64,4 +63,4 @@ const Formulario = ({ addList }) => {
   );
 };
 
-export default Formulario;
+export default Form;

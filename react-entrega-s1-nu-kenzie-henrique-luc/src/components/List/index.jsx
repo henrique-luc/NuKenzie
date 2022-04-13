@@ -1,7 +1,6 @@
-import Card from "../Cards/Card";
+import Card from "../Cards";
 
 const List = ({ listTransactions, handleList }) => {
-  console.log(listTransactions);
   return (
     <ul className="container_ul">
       {listTransactions.map((transaction, index) => (
