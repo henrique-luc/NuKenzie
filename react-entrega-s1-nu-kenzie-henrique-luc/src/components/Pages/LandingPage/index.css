@@ -1,0 +1,76 @@
+.container_landingPage {
+  background-color: rgba(33, 37, 41, 1);
+  font-family: "Nunito", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_landingPage figure {
+  margin-bottom: 30.5px;
+}
+
+.container_landingPage img {
+}
+
+.container_landingPage figcaption {
+  display: none;
+}
+
+.container_landingPage h1 {
+  font-weight: 800;
+  font-size: 2em;
+  color: white;
+  width: 230px;
+}
+
+.container_landingPage h3 {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  margin: 28px 0;
+}
+
+.container_landingPage button {
+  background-color: #fd377e;
+  border: 2px solid #fd377e;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 90px;
+  cursor: pointer;
+}
+
+.container_landingPage-img img {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container_landingPage {
+    flex-direction: row;
+  }
+
+  .container_landingPage h1 {
+    font-size: 2.37em;
+    width: 25.4vw;
+  }
+
+  .container_landingPage h3 {
+    font-size: 1em;
+  }
+
+  .container_landingPage-img {
+    margin-left: 3.5vw;
+  }
+
+  .container_landingPage-img img {
+    display: block;
+    width: 38vw;
+  }
+}
