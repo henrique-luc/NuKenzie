@@ -2,35 +2,35 @@
   font-family: "Nunito", sans-serif;
   background-color: #f8f9fa;
   border-radius: 4px;
-  height: 14vh;
-  width: 40.7vw;
+  height: 87px;
+  width: 320px;
   display: flex;
-  margin: 6.2vh 0 0;
+  margin: 20px 0 0;
 }
 
 .color_card-grey {
   background-color: #e9ecef;
   border-radius: 4px 0px 0px 4px;
-  width: 0.3vw;
+  width: 4px;
 }
 
 .color_card-green {
   background-color: #03b898;
   border-radius: 4px 0px 0px 4px;
-  width: 0.3vw;
+  width: 4px;
 }
 
 .container_card-content {
   display: flex;
   justify-content: space-between;
-  margin: 1.3vh 0 0 2.2vh;
+  margin: 3px 0 0 20px;
 }
 
 .container_card-content h2 {
   font-size: 16px;
   font-weight: 700;
   color: #212529;
-  margin: 0 6.5vh 0.5vh 0;
+  margin: 10px 80px 0 0;
   width: 24.6vw;
   height: 6.3vh;
 }
@@ -42,11 +42,11 @@
 }
 
 .container_card-content span {
-  width: 7.5vw;
+  width: 102px;
   color: #212529;
   font-size: 12px;
   font-weight: 400;
-  margin: 2.9vh 2vw 0;
+  margin: 10px 20px 0;
 }
 
 .container_card-content button {
@@ -54,8 +54,8 @@
   border-radius: 2.46154px;
   border: none;
   cursor: pointer;
-  margin-top: 2.9vh;
-  padding: 0.3vw 1vh;
+  margin-top: 10px;
+  padding: 5px 7px;
 }
 
 .container_card-content figure {
@@ -64,4 +64,40 @@
 
 .container_card-content figcaption {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container_card {
+    height: 14vh;
+    width: 40.7vw;
+    margin: 6.2vh 0 0;
+  }
+
+  .color_card-grey {
+    width: 0.3vw;
+  }
+
+  .color_card-green {
+    width: 0.3vw;
+  }
+
+  .container_card-content {
+    margin: 1.3vh 0 0 2.2vh;
+  }
+
+  .container_card-content h2 {
+    margin: 1vh 6.5vh 0.5vh 0;
+    width: 24.6vw;
+    height: 6.3vh;
+  }
+
+  .container_card-content span {
+    width: 7.5vw;
+    margin: 1vh 1vw 0;
+  }
+
+  .container_card-content button {
+    margin-top: 1vh;
+    padding: 0.3vw 1vh;
+  }
 }

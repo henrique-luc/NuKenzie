@@ -2,17 +2,17 @@
   font-family: "Inter", sans-serif;
   background-color: #ffffff;
   border: 1px solid #e9ecef;
-  box-sizing: border-box;
   border-radius: 4px;
-  height: 56vh;
-  width: 27vw;
+  height: 351px;
+  width: 320px;
   display: flex;
   flex-direction: column;
-  margin: 6.2vh 18vw 0;
+  margin: 38px 0 0;
+  align-items: center;
 }
 
 .container_form section {
-  margin: 6vh 2.5vw 0;
+  margin: 36px 12px 0;
 }
 
 .container_form label {
@@ -22,6 +22,7 @@
 .container_form small {
   font-size: 0.75em;
   color: #868e96;
+  margin: 5px;
 }
 
 .container_form input,
@@ -30,19 +31,19 @@ select {
   border: 2px solid #f8f9fa;
   box-sizing: border-box;
   border-radius: 8px;
-  padding: 2vh 0;
+  padding: 12px 0;
 }
 
 .container_form #input_description {
-  width: 22vw;
+  width: 290px;
 }
 
 .container_form #input_value {
-  width: 9vw;
+  width: 138px;
 }
 
 .container_form #input_type {
-  width: 10vw;
+  width: 138px;
 }
 
 .container_form button {
@@ -51,9 +52,9 @@ select {
   box-sizing: border-box;
   color: white;
   border-radius: 8px;
-  width: 22vw;
-  padding: 2vh 0;
-  margin: 3vh 2.5vw;
+  width: 298px;
+  padding: 12px 0;
+  margin: 18px 12.5px;
   cursor: pointer;
 }
 
@@ -65,7 +66,7 @@ select {
 .input_type {
   display: flex;
   flex-direction: column;
-  margin-left: 2.8vw;
+  margin-left: 14px;
 }
 
 .container_form-top {
@@ -73,15 +74,72 @@ select {
   flex-direction: column;
 }
 
-.container_form-top input {
-  margin: 2.3vh 0 0.7vh;
-}
-
 .container_form-bottom {
   display: flex;
 }
 
+.container_form-top label {
+  margin-left: 5px;
+}
+
+.container_form-top input {
+  margin: 14px 0 0 4px;
+}
+
 .container_form-bottom input,
 select {
-  margin: 1.5vh 0 0;
+  margin: 9px 0 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container_form {
+    height: fit-content;
+    width: 27vw;
+    margin: 6.2vh 14vw 0;
+    align-items: normal;
+  }
+
+  .container_form section {
+    margin: 6vh 2.5vw 0;
+  }
+
+  .container_form input,
+  select {
+    padding: 2vh 0;
+  }
+
+  .container_form #input_description {
+    width: 22vw;
+  }
+
+  .container_form #input_value {
+    width: 9vw;
+  }
+
+  .container_form #input_type {
+    width: 10vw;
+  }
+
+  .container_form button {
+    width: 22vw;
+    padding: 2vh 0;
+    margin: 3vh 2.5vw;
+  }
+
+  .input_type {
+    margin-left: 2.8vw;
+  }
+
+  .container_form-top label {
+    margin-left: 0;
+  }
+
+  .container_form-top input {
+    margin: 2.3vh 0 0.7vh;
+  }
+
+  .container_form-bottom input,
+  select {
+    margin: 1.5vh 0 0;
+  }
 }

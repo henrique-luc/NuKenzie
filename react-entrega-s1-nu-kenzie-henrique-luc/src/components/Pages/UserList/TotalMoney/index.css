@@ -3,22 +3,22 @@
   border: 1px solid #e9ecef;
   box-sizing: border-box;
   border-radius: 4px;
-  height: 15vh;
-  width: 27vw;
+  height: 96px;
+  width: 320px;
   display: flex;
   justify-content: space-around;
-  margin: 6.2vh 18vw 0;
+  margin: 16px 0 0;
 }
 
 .container_total_value section,
 span {
-  margin-top: 4vh;
+  margin-top: 25px;
 }
 
 .container_total_value h2 {
   font-weight: 700;
   font-size: 16px;
-  margin-bottom: 1vh;
+  margin-bottom: 6px;
 }
 
 .container_total_value small {
@@ -29,4 +29,21 @@ span {
 
 .container_total_value span {
   color: #fd377e;
+}
+
+@media screen and (min-width: 768px) {
+  .container_total_value {
+    height: 15vh;
+    width: 27vw;
+    margin: 6.2vh 14vw 0;
+  }
+
+  .container_total_value section,
+  span {
+    margin-top: 4vh;
+  }
+
+  .container_total_value h2 {
+    margin-bottom: 1vh;
+  }
 }
