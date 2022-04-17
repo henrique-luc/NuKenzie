@@ -4,6 +4,7 @@ import Header from "./Header";
 import Form from "./Form";
 import List from "./List";
 import TotalMoney from "./TotalMoney";
+import Filter from "./Filter";
 
 import { useState } from "react";
 
@@ -27,7 +28,13 @@ export default function UserList() {
           <Form addList={addList} />
           <TotalMoney listTransactions={listTransactions} />
         </section>
-        <List listTransactions={listTransactions} handleList={handleList} />
+        <section>
+          <Filter
+            listTransactions={listTransactions}
+            setListTransactions={setListTransactions}
+          />
+          <List listTransactions={listTransactions} handleList={handleList} />
+        </section>
       </main>
     </div>
   );

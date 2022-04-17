@@ -1,0 +1,36 @@
+.container_filter {
+  margin-top: 15px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_filter h2 {
+  font-weight: 700;
+  font-size: 1em;
+  font-family: "Nunito", sans-serif;
+  color: #212529;
+  margin-bottom: 10px;
+}
+
+.container_filter section Button {
+  margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container_filter {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3vw;
+    width: auto;
+  }
+
+  .container_filter h2 {
+    margin-bottom: 0;
+  }
+
+  .container_filter section Button {
+    margin-left: 1.17vw;
+  }
+}

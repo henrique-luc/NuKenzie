@@ -2,11 +2,16 @@
   background-color: #e9ecef;
   box-sizing: border-box;
   border-radius: 8px;
-  padding: 15px;
+  padding: 10px 15px;
   border: none;
   font-family: "Nunito", sans-serif;
   font-size: 14px;
   color: #868e96;
   font-weight: 600;
   cursor: pointer;
+}
+
+.grey_button:hover {
+  background-color: #fd377e;
+  color: white;
 }

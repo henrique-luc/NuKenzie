@@ -1,2 +1,39 @@
 .container_ul {
 }
+
+.container_ul-noCard {
+  margin-top: 27px;
+}
+
+.container_ul-noCard h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: #5b6166;
+  margin-bottom: 27px;
+}
+
+.container_ul-noCard img {
+  width: 320px;
+}
+
+.container_ul-noCard figcaption {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container_ul-noCard img {
+    width: 41vw;
+  }
+
+  .container_ul-noCard {
+    margin-top: 4.3vh;
+  }
+
+  .container_ul-noCard h2 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: 4.3vh;
+  }
+}
