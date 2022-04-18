@@ -10,9 +10,11 @@ import { useState } from "react";
 
 export default function UserList() {
   const [listTransactions, setListTransactions] = useState([]);
+  const [filtered, setFiltered] = useState([]);
 
   function addList(newItem) {
     setListTransactions([...listTransactions, newItem]);
+    setFiltered([...listTransactions, newItem]);
   }
 
   function handleList(listaItens) {
@@ -31,9 +33,13 @@ export default function UserList() {
         <section>
           <Filter
             listTransactions={listTransactions}
-            setListTransactions={setListTransactions}
+            setFiltered={setFiltered}
           />
-          <List listTransactions={listTransactions} handleList={handleList} />
+          <List
+            listTransactions={listTransactions}
+            handleList={handleList}
+            filtered={filtered}
+          />
         </section>
       </main>
     </div>

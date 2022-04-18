@@ -2,11 +2,9 @@ import "./index.css";
 import Button from "../../../Button";
 import { useState } from "react";
 
-export default function Filter({ listTransactions, setListTransactions }) {
-  const [filtered, setFiltered] = useState([...listTransactions]);
-
+export default function Filter({ listTransactions, setFiltered }) {
   function filterAll() {
-    setFiltered([...filtered]);
+    setFiltered(listTransactions);
   }
 
   function filterEntrance() {

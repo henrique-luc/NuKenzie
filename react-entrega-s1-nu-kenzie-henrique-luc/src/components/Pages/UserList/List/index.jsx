@@ -1,7 +1,7 @@
 import Card from "../Cards";
 import "./index.css";
 
-const List = ({ listTransactions, handleList }) => {
+const List = ({ listTransactions, filtered, handleList }) => {
   return (
     <ul className="container_ul">
       {listTransactions.length === 0 ? (
@@ -15,7 +15,7 @@ const List = ({ listTransactions, handleList }) => {
           </div>
         </>
       ) : (
-        listTransactions.map((transaction, index) => (
+        filtered.map((transaction, index) => (
           <Card
             transaction={transaction}
             key={index}
