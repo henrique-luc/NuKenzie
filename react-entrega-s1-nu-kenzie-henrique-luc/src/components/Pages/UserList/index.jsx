@@ -17,9 +17,10 @@ export default function UserList() {
     setFiltered([...listTransactions, newItem]);
   }
 
-  function handleList(listaItens) {
-    const filtered = listTransactions.filter((item) => listaItens !== item.id);
-    setListTransactions(filtered);
+  function handleList(itemId) {
+    const filterItens = listTransactions.filter((item) => itemId !== item.id);
+    setListTransactions(filterItens);
+    setFiltered(filterItens);
   }
 
   return (
